@@ -1,0 +1,40 @@
+############################
+# Key generation settings. #
+############################
+key:
+  # Length of access key.
+  length: 16
+  # List of all characters used in keys (this is used in regex, so for special chars, please use escaped sequence).
+  alphabet: "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+
+###########################
+# IP generation settings. #
+###########################
+ip:
+  # Format of your login IP addresses (without port!). Use "#" symbol in place, where the access
+  # key should be placed.
+  format: "#.beta.mtkn.eu"
+  # Port of your server.
+  port: 25565
+
+##########################
+# Translatable messages. #
+##########################
+messages:
+  only_for_players: "&cSorry, but this command is only for players!"
+  only_for_ops: "&cSorry, but this command is only for ops!"
+  matches_no_players: "&cThere are no players matching '{}'!"
+
+  login_success: "&aLogged in using access key!"
+  login_invalid: "&cCan't login using specified access key!"
+  login_strikes: "&cYou failed to login using access key too many times! Please wait for a while."
+
+  key_generated: "&aYou new access key is: {}"
+  key_generated_ip: "&aYour new login ip address is: &6{}"
+  key_generated_warn: |
+      Access keys are immutable. &cYou won't be able to see this key again!&r
+      Also do not give this access key or password to anyone! &bIt works like
+      password.
+
+  key_not_generated: "&cPlayer {} has no key generated yet!"
+  key_of: "&aAccess key of {} is {}."

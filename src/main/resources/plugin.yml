@@ -1,0 +1,22 @@
+# Name of plugin.
+name: ${plugin.name}
+# Version of plugin
+version: ${plugin.version}
+# Description of plugin.
+description: ${plugin.description}
+# Plugin author.
+author: ${plugin.author}
+# Main class that extends JavaPlugin.
+main: ${project.mainClass}
+
+# All supported auth plugins.
+softdepend: [ProtocolLib, AuthMe]
+
+# Commands.
+commands:
+  viewloginip:
+      aliases: [viewip, viewaccessip, viewaccesskey, vak]
+      description: Used for viewing login ip addresses of tother players.
+  loginip:
+      aliases: [ip, myip, accessip, accesskey, createip, createak, cak]
+      description: Used for generating login ip addresses.
